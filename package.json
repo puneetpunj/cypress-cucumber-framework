@@ -1,0 +1,24 @@
+{
+  "name": "cypress-cucumber-framework",
+  "version": "1.0.0",
+  "description": "implementation of cypress framework with cucumber for UI validations",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open:local": "CYPRESS_ENV=uat npm run cypress:open",
+    "cypress:open:prod": "CYPRESS_ENV=production npm run cypress:open",
+    "cypress:open": "cypress open",
+    "test:local": "CYPRESS_ENV=uat npm run test",
+    "test:prod": "CYPRESS_ENV=production npm run test",
+    "test": "cypress run --env TAGS='@e2e-test' --spec 'cypress/integration/**/*.feature'"
+  },
+  "author": "Puneet Punj",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "cypress": "^3.4.0",
+    "cypress-cucumber-preprocessor": "^1.16.0"
+  },
+  "devDependencies": {}
+}

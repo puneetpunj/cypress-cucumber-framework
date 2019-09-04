@@ -1,0 +1,12 @@
+{
+  "projectId": "rfnvef",
+  "defaultCommandTimeout": 10000,
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "test-results/test-output-[hash].xml"
+  },
+  "ignoreTestFiles": [
+    "*.js",
+    "*.md"
+  ]
+}
